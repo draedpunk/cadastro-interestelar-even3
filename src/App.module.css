@@ -1,0 +1,64 @@
+.container-principal{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: #1a1333;
+}
+
+.container-imagem {
+  flex-basis: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  color: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+.container-formulario {
+  flex-basis: 40%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: var(--purple-900);
+  padding: 5rem;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.texto-baixo-aventura {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: var(--purple-100);
+  font-weight: bold;
+}
+
