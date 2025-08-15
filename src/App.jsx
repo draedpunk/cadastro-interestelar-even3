@@ -10,7 +10,7 @@ function App() {
 
         <div className={styles.logo}>
           <img src="src/assets/logo-even3-light.png" alt="Even3 logo" className={styles['logo-img']} />
-          <span><b>EVENTOS</b></span>
+          <span ><b>EVENTOS</b></span>
         </div>
         <h2 className={styles['texto-baixo-aventura']}>
           EMBARQUE EM UMA NOVA <span className={styles.highlight}>AVENTURA!</span>
