@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './Formulario.module.css';
-import { User, Envelope } from "phosphor-react";
 
 export function Formulario({inscritos, botarInscritos}) {
   const [nome, botarNome] = useState('');
@@ -39,7 +38,7 @@ export function Formulario({inscritos, botarInscritos}) {
           </span> */}
           <input
             type="email"
-            placeholder="seuemail@yahoo.com"
+            placeholder="Seuemail@yahoo.com"
             className={styles.input}
             required
             value={email}
