@@ -58,7 +58,58 @@
 }
 
 .highlight {
+  width: auto;
   color: var(--purple-100);
   font-weight: bold;
+}
+
+.containerflutuante {
+  position: absolute;
+  top: 5rem; 
+  right: 1rem;
+  z-index: 3;
+  background: transparent;
+  /* box-shadow: 0 0 7px 2px var(--purple-500); */
+  border-radius: 10em;
+  padding: 1em;
+  min-width: 220px;
+}
+
+.botaoLista {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 0.5em;
+  background:transparent;
+  border: none;
+  border-radius: 10em;
+  /* box-shadow: 0 0 7px 2px var(--purple-500); */
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.listaInscritosContainer {
+  background: var(--purple-500);
+  /* box-shadow: 0 0 7px 2px #ffe6ec; */
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 1em;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.listaInscritosContainer mark{
+  background: var(--purple-100);
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+}
+
+.listaInscritosContainer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 

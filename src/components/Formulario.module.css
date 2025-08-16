@@ -73,6 +73,10 @@ h4.baseTexto{
     pointer-events: none;
 
 } */
+.cadastro:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .inputGroup {
   display: flex;
@@ -94,4 +98,26 @@ h4.baseTexto{
   height: 24px;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.listaInscritosContainer {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.listaInscritosToggleContainer {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.iconeLista {
+  width: 24px;
+  height: 24px;
+}
+
+.listaInscritosContainer mark {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,212,222,1) 93%);
+  padding: 2px 5px;
+  border: 1px solid #e3c3ca;
+  border-radius: 1em;
 }

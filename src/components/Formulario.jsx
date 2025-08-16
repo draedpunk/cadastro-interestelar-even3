@@ -1,13 +1,26 @@
+import { useState } from 'react';
 import styles from './Formulario.module.css';
 import { User, Envelope } from "phosphor-react";
 
-export function Formulario() {
+export function Formulario({inscritos, botarInscritos}) {
+  const [nome, botarNome] = useState('');
+  const [email, botarEmail] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (nome && email) {
+      botarInscritos([...inscritos, { nome, email }]);
+      botarNome('');
+      botarEmail('');
+    }
+  }
+
   return (
     <div className={styles.formulario}>
       <h1 className={styles.baseTexto}>INSCREVA-SE</h1>
       <h4 className={styles.baseTexto}>Informe seu nome e endereço de e-mail</h4>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
             {/* <span className={styles.icon}>
                 <User />
@@ -17,6 +30,8 @@ export function Formulario() {
             placeholder="Nome"
             className={styles.input}
             required
+            value={nome}
+            onChange={(e) => botarNome(e.target.value)}
             />
             {/* 
           <span className={styles.icon}>
@@ -27,14 +42,48 @@ export function Formulario() {
             placeholder="seuemail@yahoo.com"
             className={styles.input}
             required
+            value={email}
+            onChange={(e) => botarEmail(e.target.value)}
           />
         </div>
 
-        <button type="submit" className={styles.cadastro}>
+        <button type="submit" 
+          className={styles.cadastro} disabled={!nome || !email}
+          >
           Cadastrar
         </button>
       </form>
-      
+
+      {/* {inscritos.length > 0 && (
+        <div className={styles.listaInscritosToggleContainer}>
+        <button 
+          type="button" 
+          className={styles.botaoLista} 
+          onClick={toggleList}
+        >
+          <img 
+            src="src/assets/list.svg" 
+            alt="exibe lista dos inscritos" 
+            className={styles.iconeLista}
+          />
+          <span>Ver inscritos</span>
+        </button>
+      </div>
+      )}
+
+      {exibirLista && inscritos.length > 0 ? (
+        <div className={styles.listaInscritosContainer}>
+          <h3>Pessoas inscritas:</h3>
+          <ul>
+            {inscritos.map((pessoa, idx) => (
+              <li key={idx}>
+                <mark>{pessoa.nome}</mark> — {pessoa.email}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null} */}
+
       <hr className={styles.divisor} />
       <p>Ou cadastre-se com sua conta do</p>
 
