@@ -15,7 +15,7 @@ function App() {
       <div className={styles['container-imagem']}>
         <img src="/espaco.png" alt="imagem de espaço roxo desenho" className={styles['bg-img']} />
         <div className={styles.logo}>
-          <img src="src/assets/logo-even3-light.png" alt="Even3 logo" className={styles['logo-img']} />
+          <img src="/logo-even3-light.png" alt="Even3 logo" className={styles['logo-img']} />
           <span><b>EVENTOS</b></span>
         </div>
         <h2 className={styles['texto-baixo-aventura']}>
@@ -31,7 +31,7 @@ function App() {
               onClick={toggleList}
             >
               <img 
-                src="src/assets/planet.png" 
+                src="/planet.png" 
                 width={70}
                 alt="exibe lista dos inscritos" 
                 className={styles.iconeLista}

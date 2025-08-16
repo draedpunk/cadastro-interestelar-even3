@@ -21,9 +21,7 @@ export function Formulario({inscritos, botarInscritos}) {
 
       <form onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
-            {/* <span className={styles.icon}>
-                <User />
-            </span> */}
+
             <input 
             type="name"
             placeholder="Nome"
@@ -32,10 +30,7 @@ export function Formulario({inscritos, botarInscritos}) {
             value={nome}
             onChange={(e) => botarNome(e.target.value)}
             />
-            {/* 
-          <span className={styles.icon}>
-            <Envelope />
-          </span> */}
+            
           <input
             type="email"
             placeholder="Seuemail@yahoo.com"
@@ -53,54 +48,24 @@ export function Formulario({inscritos, botarInscritos}) {
         </button>
       </form>
 
-      {/* {inscritos.length > 0 && (
-        <div className={styles.listaInscritosToggleContainer}>
-        <button 
-          type="button" 
-          className={styles.botaoLista} 
-          onClick={toggleList}
-        >
-          <img 
-            src="src/assets/list.svg" 
-            alt="exibe lista dos inscritos" 
-            className={styles.iconeLista}
-          />
-          <span>Ver inscritos</span>
-        </button>
-      </div>
-      )}
-
-      {exibirLista && inscritos.length > 0 ? (
-        <div className={styles.listaInscritosContainer}>
-          <h3>Pessoas inscritas:</h3>
-          <ul>
-            {inscritos.map((pessoa, idx) => (
-              <li key={idx}>
-                <mark>{pessoa.nome}</mark> — {pessoa.email}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null} */}
-
       <hr className={styles.divisor} />
       <p>Ou cadastre-se com sua conta do</p>
 
       <div className={styles.contas}>
         <button className={styles.googleBotao}>
-          <img src="src/assets/googlelogo.png" 
+          <img src="/googlelogo.png" 
             alt="Google" 
             /> Google
         </button>
         <button className={styles.facebookBotao}>
-          <img src="src/assets/facebooklogo.png" 
+          <img src="/facebooklogo.png" 
             alt="Facebook"  
              /> Facebook
         </button>
 
       </div>
       <p>
-        Ao registrar, você concorda com nossos <a href="#">Termos e Condições</a>.
+        Ao registrar, você concorda com nossos <a href="https://www.linkedin.com/in/rodrigues-pamela" target="_blank">Termos e Condições</a>.
       </p>
       <p>Modelo original por <a href="https://www.figma.com/community/file/1316288257262209196/login-signup-web-mobile-app-design" target="_blank"> Ibrahim Memon</a>.</p>
     </div>
