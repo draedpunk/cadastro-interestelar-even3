@@ -1,15 +1,15 @@
 .baseTexto{
-    font-family: 'Poppins', sans-serif;
-    color: var(--white);
-    text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  text-align: left;
 }
 
 h1.baseTexto{
-    font-size: 5.77rem;
+  font-size: 5.77rem;
 }
 h4.baseTexto{
-    font-size: 1.25rem;
-    font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .divisor {
@@ -21,56 +21,56 @@ h4.baseTexto{
 }
 
 .formulario{
-    background-color: var(--purple-900);
-    border-radius: 10px;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
+  background-color: var(--purple-900);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
     
 }
 
 .formulario input{
-    padding: 1rem;
-    width: 100%;
-    height: 3.875rem;
-    font-size: 1.15rem;
-    font-weight: 500;
-    background-color: #48277a56;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    color: var(--white);
+  padding: 1rem;
+  width: 100%;
+  height: 3.875rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background-color: #48277a56;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .formulario button{
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: 20px;
-    background: #501794;
-    background: linear-gradient(207deg, rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 1) 100%);
-    color: var(--white);
-    font-size: 1.15rem;
-    font-weight: 400;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  background: #501794;
+  background: linear-gradient(207deg, rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 1) 100%);
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .formulario button.cadastro{
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .formulario button:hover{
-    background: linear-gradient(207deg,rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 0.48) 100%);
+  background: linear-gradient(207deg,rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 0.48) 100%);
 }
 
 /* .icon {
-    font-size: 24px;
-    color: var(--gray-200);
-    font-weight: 500;
-    pointer-events: none;
+  font-size: 24px;
+  color: var(--gray-200);
+  font-weight: 500;
+  pointer-events: none;
 
 } */
 .cadastro:disabled {
@@ -78,7 +78,7 @@ h4.baseTexto{
   cursor: not-allowed;
 }
 
-.inputGroup {
+.inputelementos {
   display: flex;
   flex-direction: column;
   align-items: center;

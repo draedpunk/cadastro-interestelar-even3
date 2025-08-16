@@ -20,7 +20,7 @@ export function Formulario({inscritos, botarInscritos}) {
       <h4 className={styles.baseTexto}>Informe seu nome e endereço de e-mail</h4>
 
       <form onSubmit={handleSubmit}>
-        <div className={styles.inputGroup}>
+        <div className={styles.inputelementos}>
 
             <input 
             type="name"
@@ -53,12 +53,12 @@ export function Formulario({inscritos, botarInscritos}) {
 
       <div className={styles.contas}>
         <button className={styles.googleBotao}>
-          <img src="/googlelogo.png" 
+          <img src="/google.png" 
             alt="Google" 
             /> Google
         </button>
         <button className={styles.facebookBotao}>
-          <img src="/facebooklogo.png" 
+          <img src="/facebook.png" 
             alt="Facebook"  
              /> Facebook
         </button>

@@ -15,7 +15,7 @@ function App() {
       <div className={styles['container-imagem']}>
         <img src="/espaco.png" alt="imagem de espaço roxo desenho" className={styles['bg-img']} />
         <div className={styles.logo}>
-          <img src="/logo-even3-light.png" alt="Even3 logo" className={styles['logo-img']} />
+          <img src="/even3.png" alt="Even3 logo" className={styles['logo-img']} />
           <span><b>EVENTOS</b></span>
         </div>
         <h2 className={styles['texto-baixo-aventura']}>
