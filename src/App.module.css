@@ -91,8 +91,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
 .listaInscritosContainer {
-  background: var(--purple-500);
+  /* background: var(--purple-500); */
+  background: linear-gradient(207deg,rgba(80, 23, 148, 0.7) 0%, rgba(38, 16, 70, 0.7) 100%);
   /* box-shadow: 0 0 7px 2px #ffe6ec; */
   border-radius: 1em;
   padding: 1em;

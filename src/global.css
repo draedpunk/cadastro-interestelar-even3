@@ -47,9 +47,8 @@ a {
   text-decoration: none;
 }
 
-/* Optional: Add media queries for finer control */
 @media (max-width: 768px) {
   :root {
-    font-size: 14px; /* Smaller screens use smaller base size */
+    font-size: 14px; 
   }
 }
