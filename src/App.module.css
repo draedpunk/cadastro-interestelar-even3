@@ -1,7 +1,7 @@
 .container-principal{
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--purple-700);
 }
 
@@ -19,7 +19,7 @@
 
 .container-formulario {
   flex: 1 1 40%;
-  min-width: 280px;
+  min-width: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
