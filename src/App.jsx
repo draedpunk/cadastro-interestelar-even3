@@ -36,7 +36,6 @@ function App() {
                 alt="exibe lista dos inscritos" 
                 className={styles.iconeLista}
               />
-              {/* <span>Ver inscritos</span> */}
             </button>
 
             {exibirLista && (

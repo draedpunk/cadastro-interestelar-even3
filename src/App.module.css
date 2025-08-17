@@ -1,30 +1,30 @@
 .container-principal{
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--purple-700);
 }
 
 .container-imagem {
-  flex-basis: 60%;
-  width: 60%;
+  flex: 1 1 60%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem;
+  padding: 1.5rem;
   color: var(--white);
   overflow: hidden;
   position: relative;
 }
 
 .container-formulario {
-  flex-basis: 40%;
-  width: 40%;
+  flex: 1 1 40%;
+  min-width: 280px;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   background: var(--purple-900);
-  padding: 5rem;
+  padding: clamp(1.5rem, 4vw, 5rem);
 }
 
 .bg-img {
@@ -42,6 +42,8 @@
   position: absolute;
   top: 2rem;
   left: 2rem;
+  max-width: 120px;
+  width: clamp(80px, 10vw, 150px);
   font-size: 2rem;
   font-weight: bold;
   z-index: 1;

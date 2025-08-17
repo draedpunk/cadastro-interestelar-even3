@@ -5,10 +5,10 @@
 }
 
 h1.baseTexto{
-  font-size: 5.77rem;
+  font-size: clamp(2rem, 5vw, 5.77rem);
 }
 h4.baseTexto{
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 500;
 }
 
