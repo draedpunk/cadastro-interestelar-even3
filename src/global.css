@@ -4,6 +4,7 @@
   --gray-300: #B6B6B6;
 
   --purple-100: #b983ff;
+  --purple-200: #b983ff;
   --purple-600: #3B2063;
   --purple-500: #4A0087;
   --purple-700: #1a1333;
@@ -26,8 +27,7 @@ html {
 }
 
 body {
-  font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 p, a {
@@ -36,11 +36,11 @@ p, a {
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.25rem); 
+  font-size: clamp(1rem, 1.5vw, 0.625rem); 
 }
 
 a {
-  font-size: clamp(1rem, 1.5vw, 1.25rem); 
+  font-size: clamp(1rem, 1.5vw, 0.625rem); 
   font-weight: 600;
   color: var(--purple-500);
   text-decoration: none;

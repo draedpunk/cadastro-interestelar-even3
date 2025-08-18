@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import styles from './Formulario.module.css';
 
-export function Formulario({inscritos, botarInscritos}) {
+export function Formulario({ inscritos, botarInscritos }) {
   const [nome, botarNome] = useState('');
   const [email, botarEmail] = useState('');
+  const [mensagem, botarMensagem] = useState('');
+  const [mostrarMensagem, botarMostrarMensagem] = useState(false);
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -11,6 +14,10 @@ export function Formulario({inscritos, botarInscritos}) {
       botarInscritos([...inscritos, { nome, email }]);
       botarNome('');
       botarEmail('');
+
+      botarMensagem('Cadastro realizado! Clique no planeta roxo ao lado para visualizar.');
+      botarMostrarMensagem(true);
+      setTimeout(() => botarMostrarMensagem(false), 3000);
     }
   }
 
@@ -21,16 +28,14 @@ export function Formulario({inscritos, botarInscritos}) {
 
       <form onSubmit={handleSubmit}>
         <div className={styles.inputelementos}>
-
-            <input 
+          <input 
             type="name"
             placeholder="Nome"
             className={styles.input}
             required
             value={nome}
             onChange={(e) => botarNome(e.target.value)}
-            />
-            
+          />
           <input
             type="email"
             placeholder="Seuemail@yahoo.com"
@@ -43,31 +48,33 @@ export function Formulario({inscritos, botarInscritos}) {
 
         <button type="submit" 
           className={styles.cadastro} disabled={!nome || !email}
-          >
+        >
           Cadastrar
         </button>
       </form>
+
+      {/* {mensagem && <p>{mensagem}</p>} */}
+      {mensagem && (
+        <p className={`${styles.mensagemSucesso} ${mostrarMensagem ? styles.mostrar : ''}`}>
+          {mensagem}
+        </p>
+      )}
 
       <hr className={styles.divisor} />
       <p>Ou cadastre-se com sua conta do</p>
 
       <div className={styles.contas}>
         <button className={styles.googleBotao}>
-          <img src="/google.png" 
-            alt="Google" 
-            /> Google
+          <img src="/google.png" alt="Google" /> Google
         </button>
         <button className={styles.facebookBotao}>
-          <img src="/facebook.png" 
-            alt="Facebook"  
-             /> Facebook
+          <img src="/facebook.png" alt="Facebook" /> Facebook
         </button>
-
       </div>
+
       <p>
         Ao registrar, você concorda com nossos <a href="https://www.linkedin.com/in/rodrigues-pamela" target="_blank">Termos e Condições</a>.
       </p>
-      <p>Modelo original por <a href="https://www.figma.com/community/file/1316288257262209196/login-signup-web-mobile-app-design" target="_blank"> Ibrahim Memon</a>.</p>
     </div>
   );
 }

@@ -44,17 +44,23 @@
   left: 2rem;
   max-width: 120px;
   width: clamp(80px, 10vw, 150px);
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   z-index: 1;
 }
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
 
 .texto-baixo-aventura {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
   z-index: 1;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
 }

@@ -5,10 +5,10 @@
 }
 
 h1.baseTexto{
-  font-size: clamp(2rem, 5vw, 3.77rem);
+  font-size: clamp(2rem, 5vw, 2rem);
 }
 h4.baseTexto{
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2.5vw, 0.75rem);
   font-weight: 500;
 }
 
@@ -17,7 +17,7 @@ h4.baseTexto{
   height: 1px;
   background: var(--gray-200); 
   width: 100%;
-  margin: 1rem auto;
+  margin: 0.125rem auto;
 }
 
 .formulario{
@@ -26,7 +26,7 @@ h4.baseTexto{
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.125rem;
   width: 100%; 
   margin: 0 auto; 
     
@@ -35,25 +35,25 @@ h4.baseTexto{
 .formulario input{
   padding: 1rem;
   width: 100%;
-  height: 3.875rem;
-  font-size: 1.15rem;
+  height: 2.5rem;
+  font-size: 0.75rem;
   font-weight: 500;
   background-color: #48277a56;
   border: none;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--white);
 }
 
 .formulario button{
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 20px;
   background: #501794;
   background: linear-gradient(207deg, rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 1) 100%);
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: 0.75rem;
   font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -68,13 +68,6 @@ h4.baseTexto{
   background: linear-gradient(207deg,rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 0.48) 100%);
 }
 
-/* .icon {
-  font-size: 24px;
-  color: var(--gray-200);
-  font-weight: 500;
-  pointer-events: none;
-
-} */
 .cadastro:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -91,14 +84,14 @@ h4.baseTexto{
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.125rem;
 }
 
 .googleBotao img,
 .facebookBotao img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
   vertical-align: middle;
 }
 
@@ -115,6 +108,7 @@ h4.baseTexto{
 .iconeLista {
   width: 24px;
   height: 24px;
+  
 }
 
 .listaInscritosContainer mark {
@@ -122,4 +116,20 @@ h4.baseTexto{
   padding: 2px 5px;
   border: 1px solid var(--purple-100);
   border-radius: 1em;
+}
+
+.mensagemSucesso {
+  color: var(--purple-200); 
+  font-weight: bold;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none;
+}
+
+.mensagemSucesso.mostrar {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
