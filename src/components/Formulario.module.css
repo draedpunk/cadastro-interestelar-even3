@@ -111,13 +111,6 @@ h4.baseTexto{
   
 }
 
-.listaInscritosContainer mark {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,212,222,1) 93%);
-  padding: 2px 5px;
-  border: 1px solid var(--purple-100);
-  border-radius: 1em;
-}
-
 .mensagemSucesso {
   color: var(--purple-200); 
   font-weight: bold;

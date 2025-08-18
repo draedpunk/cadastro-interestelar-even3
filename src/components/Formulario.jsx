@@ -17,7 +17,7 @@ export function Formulario({ inscritos, botarInscritos }) {
 
       botarMensagem('Cadastro realizado! Clique no planeta roxo ao lado para visualizar.');
       botarMostrarMensagem(true);
-      setTimeout(() => botarMostrarMensagem(false), 3000);
+      setTimeout(() => botarMostrarMensagem(false), 5000);
     }
   }
 

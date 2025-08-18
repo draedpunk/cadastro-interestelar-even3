@@ -111,19 +111,14 @@
 .listaInscritosContainer {
   background: linear-gradient(207deg,rgba(80, 23, 148, 0.7) 0%, rgba(38, 16, 70, 0.7) 100%);
   box-shadow: 0 0 10px 4px var(--purple-100);
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 0 2rem 2rem 2rem;
+  border: 1px solid var(--gray-200);
+  padding: 1.25em;
   margin-top: 1em;
   color: var(--white);
   font-family: 'Poppins', sans-serif;
   font-size: clamp(0.625rem, 1.5vw, 0.75rem);
 }
-
-/* .listaInscritosContainer mark{
-  background: var(--purple-900);
-  border-radius: 0.25rem;
-  padding: 0 0.5rem;
-} */
 
 .listaInscritosContainer mark {
   background: var(--purple-100);
