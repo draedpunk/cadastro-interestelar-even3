@@ -22,10 +22,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
   line-height: 1.25;
 }
@@ -36,11 +32,11 @@ p, a {
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 0.625rem); 
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem); 
 }
 
 a {
-  font-size: clamp(1rem, 1.5vw, 0.625rem); 
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem); 
   font-weight: 600;
   color: var(--purple-500);
   text-decoration: none;

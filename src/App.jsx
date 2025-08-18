@@ -32,7 +32,7 @@ function App() {
             >
               <img 
                 src="/planet.png" 
-                width={70}
+                width={80}
                 alt="exibe lista dos inscritos" 
                 className={styles.iconeLista}
               />
