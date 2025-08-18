@@ -119,11 +119,21 @@
   font-size: clamp(0.625rem, 1.5vw, 0.75rem);
 }
 
-.listaInscritosContainer mark{
-  background: var(--purple-100);
+/* .listaInscritosContainer mark{
+  background: var(--purple-900);
   border-radius: 0.25rem;
   padding: 0 0.5rem;
+} */
+
+.listaInscritosContainer mark {
+  background: var(--purple-100);
+  color: var(--purple-700);     
+  padding: 0 0.5rem;            
+  border-radius: 0.25rem;       
+  font-weight: bold; 
+  line-height: 1.6;            
 }
+
 
 .listaInscritosContainer ul{
   list-style: none;
